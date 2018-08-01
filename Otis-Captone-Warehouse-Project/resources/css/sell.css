@@ -1,0 +1,113 @@
+#main {
+  text-align: left;
+  justify-items: auto;
+}
+
+.sell {
+  padding: 2rem 5rem 3.75rem 5rem;
+}
+
+.sell .product-list-title {
+  font-weight: bold;
+  font-size: 32px;
+}
+
+form {
+  display: grid;
+  grid-template-areas: 'name name price quantity'
+                       'description description description description'
+                       '. . . submit';
+  font-size: inherit;
+}
+
+input {
+  min-width: 50%;
+  box-sizing: border-box;
+}
+
+select {
+  background-color: hsla(0, 0%, 100%, 1);
+  font-size: inherit;
+}
+
+textarea {
+  min-height: 12rem;
+  font-size: inherit;
+}
+
+#name {
+  grid-area: name;
+}
+
+#price {
+  grid-area: price;
+  margin-left: 5%;
+}
+
+#quantity {
+  grid-area: quantity;
+  margin-left: 5%;
+}
+
+#description {
+  grid-area: description;
+  margin-top: 5%;
+}
+
+#submit {
+  grid-area: submit;
+  justify-self: center;
+  margin-top: 5%;
+}
+
+#description textarea {
+  border: none;
+}
+
+#name input:focus {
+  background-color: white;
+  color: hsla(290, 4%, 27%, 1);
+  border: hsla(0, 0%, 89%, 1) 2px solid;
+}
+
+#price input:focus {
+  background-color: white;
+  color: hsla(290, 4%, 27%, 1);
+  border: hsla(0, 0%, 89%, 1) 2px solid;
+}
+
+#description textarea:focus {
+  background-color: white;
+  color: hsla(290, 4%, 27%, 1);
+  border: hsla(0, 0%, 89%, 1) 2px solid;
+}
+
+@media only screen and (max-width: 1100px) {
+  .sell {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+
+@media only screen and (max-width: 970px) {
+  form {
+    grid-template-areas: 'name name'
+                         'price quantity'
+                         'description description'
+                         '. submit';
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  form {
+    grid-template-areas: 'name'
+                         'price'
+                         'quantity'
+                         'description'
+                         'submit';
+  }
+
+  #submit {
+    justify-self: center;
+  }
+}

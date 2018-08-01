@@ -1,0 +1,61 @@
+
+#main {
+  text-align: left;
+  justify-items: auto;
+}
+
+.jobs {
+  padding: 2rem 5rem 3.75rem 5rem;
+}
+
+.jobs h3 {
+  justify-self: left;
+  margin-bottom: 2rem;
+  font-size: inherit;
+  margin-left: 13%;
+}
+
+form {
+  display: grid;
+  grid-template-columns: repeat(2, 1.5fr) 1fr;
+  align-items: center;
+  margin-bottom: 3.125rem;
+}
+
+form .field {
+  margin-right: 3%;
+}
+
+form .field input:focus{
+  background-color: white;
+  color: hsla(290, 4%, 27%, 1);
+  border: hsla(0, 0%, 89%, 1) 2px solid;
+}
+
+#main form .button {
+  height: fit-content;
+  padding: 1.14rem 0;
+}
+
+.job-list {
+  justify-self: left;
+  border-top: solid 1px hsla(0, 0%, 59%, 1);
+  margin-left: 13%;
+}
+
+.job {
+  border-bottom: solid 1px hsla(0, 0%, 59%, 1);
+  padding: 1rem 0;
+}
+
+.job h4 {
+  padding-bottom: .5rem;
+  font-size: inherit;
+  line-height: 1.2;
+}
+
+#see-all-jobs {
+  justify-self: left;
+  margin-top: 3.6875rem;
+  margin-left: 13%;
+}

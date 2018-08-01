@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>WareHouse</title>
+  <link rel="stylesheet" type="text/css" href="resources/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="resources/css/base.css">
+  <link rel="stylesheet" type="text/css" href="resources/css/sell.css">
+  <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+</head>
+<body>
+  <main class="container">
+
+    <!-- Header -->
+
+    <header>
+      <div class="image-container">
+        <a href="index.html"><img class="logo" src="resources/img/warehouse-logo.svg" alt="Warehouse logo" role="img"></a>
+      </div>
+      <div class="search-bar">
+        <input type="text" name="search" placeholder="Search for items" role="textbox">
+        <a href="" class="icon"><img src="resources/img/search.svg" alt="Search" role="img"></a>
+      </div>
+      <a href="cart.html" class="button cart">Cart <img src="resources/img/cart.svg" alt="Cart" role="img"></a>
+    </header>
+    <nav role="navigation">
+      <a href="deals.html">Today's Deals</a>
+      <a href="products.html">Products</a>
+      <a href="about.html">About Us</a>
+      <a href="sell.html">Sell</a>
+      <a href="#">Help</a>
+    </nav>
+
+    <!-- Sell Product Form -->
+
+    <section id="main" class="sell" role="region">
+      <ul class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <li>Sell</li>
+      </ul>
+      <div class="product-list-title">Sell</div>
+      <form role="form">
+        <div id="name" class="field">
+          <input type="text" name="name" placeholder="Product Name" role="textbox">
+        </div>
+        <div id="price" class="field">
+          <input type="number" name="price" placeholder="Price" role="textbox">
+        </div>
+        <div id="quantity" class="field">
+          <select name="quantity" placeholder="Quantity">
+            <option value="100"><100</option>
+            <option value="200">100-200</option>
+            <option value="300">200-300</option>
+            <option value="400">300-400</option>
+            <option value="500">>500</option>
+          </select>
+        </div>
+        <div id="description" class="field">
+          <textarea type="text" name="description" placeholder="Description of product" role="textbox"></textarea>
+        </div>
+        <a href="#" class="button" id="submit">Submit</a>
+      </form>
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+      <img src="resources/img/warehouse-logo.svg" alt="Warehouse logo" role="img">
+      <div class="links">
+        <h4 role="heading">Get to know us</h4>
+        <a href="#">About us</a>
+        <a href="jobs.html">Jobs</a>
+        <a href="#">Investor relations</a>
+        <a href="#">Link</a>
+      </div>
+      <div class="links">
+        <h4 role="heading">Make money with us</h4>
+        <a href="sell.html">Sell on WareHouse</a>
+        <a href="#">Become a vendor</a>
+        <a href="#">Fundraiser events</a>
+        <a href="#">Community outreach</a>
+      </div>
+      <div class="links">
+        <h4 role="heading">Help</h4>
+        <a href="#">Contact us</a>
+        <a href="#">Conditions of use</a>
+        <a href="#">Report a problem</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+    </footer>
+  </main>
+</body>
+</html>
